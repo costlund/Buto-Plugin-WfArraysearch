@@ -1,8 +1,16 @@
-version: '1.0.1'
+version: 1.1.0
 history:
-  '1.0.1':
+  1.1.0:
+    date: '2021-02-08'
+    title: 'Empty key'
+    description: 'Handle if key is an empty string.'
+  1.0.1:
+    date: '2018-11-23'
+    title: 'Class file'
     description: 'Rename class file and add manifest.'
-  '1.0':
+  1.0.0:
+    date: '2018-06-14'
+    title: First version
     description: 'First version.'
 plugin: {}
 sys:
