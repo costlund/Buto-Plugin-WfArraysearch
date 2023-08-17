@@ -18,7 +18,7 @@ class PluginWfArraysearch{
         /**
          * 
          */
-        if(!strlen($key)){
+        if(!wfPhpfunc::strlen($key)){
           continue;
         }
         /**
@@ -26,23 +26,23 @@ class PluginWfArraysearch{
          */
         $log_key = false;
         if(!is_array($value)){
-          if(!strlen($this->data['key_name']) && !strlen($this->data['key_value'])){
+          if(!wfPhpfunc::strlen($this->data['key_name']) && !wfPhpfunc::strlen($this->data['key_value'])){
             $log_key = true;
-          }elseif(strlen($this->data['key_name']) && strlen($this->data['key_value'])){
+          }elseif(wfPhpfunc::strlen($this->data['key_name']) && wfPhpfunc::strlen($this->data['key_value'])){
             if((string)$key === (string)$this->data['key_name'] && (string)$value === (string)$this->data['key_value']){
               $log_key = true;
             }
-          }elseif(strlen($this->data['key_name'])){
+          }elseif(wfPhpfunc::strlen($this->data['key_name'])){
             if((string)$key === (string)$this->data['key_name']){
               $log_key = true;
             }
-          }elseif(strlen($this->data['key_value'])){
+          }elseif(wfPhpfunc::strlen($this->data['key_value'])){
             if((string)$value === (string)$this->data['key_value']){
               $log_key = true;
             }
           }
         }else{
-          if(strlen($this->data['key_name'])){
+          if(wfPhpfunc::strlen($this->data['key_name'])){
             if((string)$key === (string)$this->data['key_name']){
               $log_key = true;
             }

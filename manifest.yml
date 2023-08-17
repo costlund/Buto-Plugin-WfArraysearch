@@ -1,5 +1,9 @@
-version: 1.1.0
+version: 1.2.0
 history:
+  1.2.0:
+    date: '2023-08-17'
+    title: 'PHP 8.2'
+    description: 'Changes according to PHP version 8.2.'
   1.1.0:
     date: '2021-02-08'
     title: 'Empty key'
@@ -10,9 +14,9 @@ history:
     description: 'Rename class file and add manifest.'
   1.0.0:
     date: '2018-06-14'
-    title: First version
+    title: 'First version'
     description: 'First version.'
-plugin: {}
+plugin: {  }
 sys:
   -
     name: mercury
@@ -20,7 +24,7 @@ sys:
       - '1.0'
 php:
   - '7.2'
-author: Claes Östlund
+author: 'Claes Östlund'
 links:
   - 'https://github.com'
 description: 'Search in array.'
